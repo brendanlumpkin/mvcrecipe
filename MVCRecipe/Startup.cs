@@ -52,9 +52,11 @@ namespace MVCRecipe
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
+            app.UseCookiePolicy();
 
             app.UseRouting();
-
+            //dbInit.Initialize();
             app.UseAuthentication();
             app.UseAuthorization();
 

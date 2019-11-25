@@ -12,6 +12,10 @@ using MVCRecipe.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MVCRecipe.DataAccess;
+using MVCRecipe.DataAccess.Data.Initializer;
+using MVCRecipe.Utility;
+using MVCRecipe.Models;
 
 namespace MVCRecipe
 {
@@ -34,6 +38,7 @@ namespace MVCRecipe
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the fHTTP request pipeline.
@@ -59,6 +64,8 @@ namespace MVCRecipe
             //dbInit.Initialize();
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

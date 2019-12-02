@@ -1,15 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+    <head>
+        <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+        <title>Recipe Search</title>
+    </head>
 
-    <div class="text-center">
+    <main>
+        <div class="text-center">
 
+            <h1 class="display-4">Recipe Search</h1>
 
-        <h1 class="display-4">Recipe Search</h1>
+            <input type="text" name="query" id="query" />
+            <button onclick="apiSearch()" id="search">Search</button>
+            <br />
 
-        <input type="text" name="query" id="query" />
-        <button onclick="apiSearch()" id="search">Search</button>
-        <br />
-        <div id="results"></div>
-
-    </div>
+            <div id="results"></div>
+        </div>
+    </main>

@@ -29,4 +29,9 @@
     <ProjectReference Include="..\MVCRecipe.Utility\MVCRecipe.Utility.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+
 </Project>

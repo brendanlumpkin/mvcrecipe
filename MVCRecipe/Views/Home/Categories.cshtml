@@ -2,18 +2,16 @@
     ViewData["Title"] = "Categories";
 }
 <h1>@ViewData["Title"]</h1>
-
-<div class="text-center">
-    <h1 class="display-4">Time of Day</h1>
-    <ul>
-        <a href=""><li>Breakfast</li></a>
-    </ul>
-    <br />
-    <h1 class="display-4">Other Categories</h1>
-    <ul>
-        <a href=""><li>Yeet</li></a>
-    </ul>
-</div>
+<head>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            categories();
+        });
+    </script>
+</head>
+    <div style="position:relative">
+        <div id="results"></div>
+    </div>
 
 
 

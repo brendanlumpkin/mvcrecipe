@@ -56,7 +56,6 @@ C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\MVCRecip
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\MVCRecipe.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\MVCRecipe.pdb
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\Razor\Views\Home\Categories.cshtml.g.cs
-C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\Razor\Views\Home\Favorites.cshtml.g.cs
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\MVCRecipe.DataAccess.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\MVCRecipe.Models.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\MVCRecipe.Utility.dll
@@ -168,3 +167,4 @@ C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\ru\Micro
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\Razor\Views\Home\Favorites.cshtml.g.cs

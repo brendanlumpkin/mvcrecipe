@@ -75,7 +75,7 @@ function categories(){
                 console.log(data);
                 var category = $("<div>");
                 var header = $("<h5>");
-                var name = data.q; //header not displaying
+                var name = data.q; 
                 header.text(name); 
                 category.append(header);
                 for (var i = 0; i < 3; i++) {
@@ -91,5 +91,16 @@ function categories(){
                 }
             });
      }
+}
+
+function favorites() {
+    if (document.getElementById('Register').innerHTML.indexOf("Register") != -1) {
+        alert("Log in to view favorites");
+        var url = "/Identity/Account/Login"
+        window.location.href = url;
+    }
+    else {
+
+    }
 }
     

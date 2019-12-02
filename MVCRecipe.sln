@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCRecipe", "MVCRecipe\MVCRecipe.csproj", "{F1E13050-9BA7-4FBC-B68B-7A3716D8E56B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCRecipe.DataAccess", "MVCRecipe.DataAccess\MVCRecipe.DataAccess.csproj", "{862B5A0B-0D08-42AE-B7C7-202A8B07E8CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCRecipe.DataAccess", "MVCRecipe.DataAccess\MVCRecipe.DataAccess.csproj", "{862B5A0B-0D08-42AE-B7C7-202A8B07E8CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCRecipe.Models", "MVCRecipe.Models\MVCRecipe.Models.csproj", "{71FB10A3-7F88-43A4-BC99-2A4BCD422768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCRecipe.Models", "MVCRecipe.Models\MVCRecipe.Models.csproj", "{71FB10A3-7F88-43A4-BC99-2A4BCD422768}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCRecipe.Utility", "MVCRecipe.Utility\MVCRecipe.Utility.csproj", "{549380FA-4C06-4562-9DA1-FD51AE2D6012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCRecipe.Utility", "MVCRecipe.Utility\MVCRecipe.Utility.csproj", "{549380FA-4C06-4562-9DA1-FD51AE2D6012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -47,10 +47,12 @@ function apiSearch() {
                 link.attr("href", url);
                 link.attr("target", "_blank");
                 recipe.append(link);
-                var save = $("<a>");
+                
+                var save = $("<button>");
                 save.text("Save to Profile");
-                //save.attr("href", save function?);
-                //recipe.append(save);
+                save.val(url);
+                save.attr('onclick', 'saveRecipe(\"' + url +'\")');
+                recipe.append(save);
                 recipe.append($("<h1>"));
                 $("#results").append(recipe);
             };
@@ -90,8 +92,10 @@ function categories(){
                     $("#results").append(category);
                 }
             });
-     }
+    }
 }
+
+
 
 function favorites() {
     if (document.getElementById('Register').innerHTML.indexOf("Register") != -1) {
@@ -100,7 +104,9 @@ function favorites() {
         window.location.href = url;
     }
     else {
-
+        var saved = $("div");
+        
+        $("#favList").append(saved);
     }
 }
     

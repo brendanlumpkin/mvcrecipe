@@ -14,5 +14,6 @@ namespace MVCRecipe.Models
         public string City { get; set; }
         public string State { get; set; }
         public string PostalCode { get; set; }
+        public IEnumerable<Recipe> Recipes { get; set; }
     }
 }

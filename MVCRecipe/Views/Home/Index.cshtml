@@ -17,4 +17,17 @@
 
             <div id="results"></div>
         </div>
+        <script>
+            function saveRecipe(url) {
+                var recipeLink = url;
+                $.ajax({
+                    data: recipeLink,
+                    url: '@Url.Action("SaveRecipe", "Home", new { link = "${recipeLink}"})',
+                    type: "POST"
+                })
+                    .done(function () {
+                        alert("Saved to profile");
+                    });
+            }
+        </script>
     </main>

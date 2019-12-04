@@ -1,13 +1,15 @@
-﻿@{
+﻿@model IEnumerable<Recipe>
+
+@{
     ViewData["Title"] = "Favorites";
 }
-    <head>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                favorites();
-            });
-        </script>
-    </head>
+
+<div id="favList">
+    @foreach(var recipe in Model)
+    {
+        <a href="@recipe.RecipeLink">Stuff</a>
+    }
+</div>
 
 
 

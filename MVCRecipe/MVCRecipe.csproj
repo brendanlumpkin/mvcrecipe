@@ -5,6 +5,11 @@
     <UserSecretsId>aspnet-MVCRecipe-AA96F6A6-E024-4D65-896B-86B57CB57D0E</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20191203174118_recipeUser.cs" />
+    <Compile Remove="Migrations\20191203174118_recipeUser.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.3.0" />

@@ -14,5 +14,6 @@ namespace MVCRecipe.DataAccess.Data
         {
         }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<Recipe> Recipe { get; set; }
     }
 }

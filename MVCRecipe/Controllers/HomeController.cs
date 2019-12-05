@@ -36,8 +36,10 @@ namespace MVCRecipe.Controllers
         public async Task<IActionResult> Favorites()
         {
             var user = await _userManager.GetUserAsync(User);
-            var temp = _context.ApplicationUser.Where(u => u.Id == user.Id).FirstOrDefault();
-            List<Recipe> recipes = temp.Recipes.ToList();
+
+            List<Recipe> recipes = _context.Recipe
+                .Where(u => u.ApplicationUserId == user.Id)
+                .ToList();
             return View(recipes);
         }
 
@@ -47,10 +49,10 @@ namespace MVCRecipe.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public async Task<ActionResult> SaveRecipe()
+        public async Task<ActionResult> SaveRecipe(string link)
         {
             var user = await _userManager.GetUserAsync(User);
-            string link = "http://google.com/";
+            
             var recipe = new Recipe
             {
                 ApplicationUserId = user.Id,

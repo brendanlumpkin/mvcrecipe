@@ -6,3 +6,11 @@ C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\M
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.AssemblyInfo.cs
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.pdb
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\bin\Debug\netcoreapp3.0\MVCRecipe.Models.deps.json
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\bin\Debug\netcoreapp3.0\MVCRecipe.Models.dll
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\bin\Debug\netcoreapp3.0\MVCRecipe.Models.pdb
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.csprojAssemblyReference.cache
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.AssemblyInfoInputs.cache
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.AssemblyInfo.cs
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.dll
+C:\Users\18176\source\repos\mvcrecipe\MVCRecipe.Models\obj\Debug\netcoreapp3.0\MVCRecipe.Models.pdb

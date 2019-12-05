@@ -4,10 +4,18 @@
     ViewData["Title"] = "Favorites";
 }
 
+
+<div class="image">
+    <img src="https://i.ytimg.com/vi/2ZI0z_3DNn0/maxresdefault.jpg"  
+         width="80280" height="220"
+         alt="All of your saved recipes are below." />
+    
+</div>
+
 <div id="favList">
-    @foreach(var recipe in Model)
+    @foreach (var recipe in Model)
     {
-        <a href="@recipe.RecipeLink">Stuff</a>
+        <a href="@recipe.RecipeLink">@recipe.RecipeLink</a>
     }
 </div>
 

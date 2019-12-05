@@ -52,7 +52,7 @@ function apiSearch() {
                 save.text("Save to Profile");
                 save.val(url);
                 save.addClass('button');
-                save.attr('onclick', 'saveRecipe()');
+                save.attr('onClick', 'saveRecipe(this);');
                 recipe.append(save);
                 recipe.append($("<h1>"));
                 $("#results").append(recipe);

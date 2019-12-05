@@ -3104,10 +3104,7 @@
         },
         "runtime": {
           "bin/placeholder/MVCRecipe.Utility.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -9259,19 +9256,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lumpk\\.nuget\\packages\\": {}
+    "C:\\Users\\18176\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lumpk\\source\\repos\\MVCRecipe\\MVCRecipe.DataAccess\\MVCRecipe.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\18176\\source\\repos\\mvcrecipe\\MVCRecipe.DataAccess\\MVCRecipe.DataAccess.csproj",
       "projectName": "MVCRecipe.DataAccess",
-      "projectPath": "C:\\Users\\lumpk\\source\\repos\\MVCRecipe\\MVCRecipe.DataAccess\\MVCRecipe.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\lumpk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lumpk\\source\\repos\\MVCRecipe\\MVCRecipe.DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\18176\\source\\repos\\mvcrecipe\\MVCRecipe.DataAccess\\MVCRecipe.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\18176\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\18176\\source\\repos\\mvcrecipe\\MVCRecipe.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\lumpk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\18176\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9284,11 +9285,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\lumpk\\source\\repos\\MVCRecipe\\MVCRecipe.Models\\MVCRecipe.Models.csproj": {
-              "projectPath": "C:\\Users\\lumpk\\source\\repos\\MVCRecipe\\MVCRecipe.Models\\MVCRecipe.Models.csproj"
+            "C:\\Users\\18176\\source\\repos\\mvcrecipe\\MVCRecipe.Models\\MVCRecipe.Models.csproj": {
+              "projectPath": "C:\\Users\\18176\\source\\repos\\mvcrecipe\\MVCRecipe.Models\\MVCRecipe.Models.csproj"
             },
-            "C:\\Users\\lumpk\\source\\repos\\MVCRecipe\\MVCRecipe.Utility\\MVCRecipe.Utility.csproj": {
-              "projectPath": "C:\\Users\\lumpk\\source\\repos\\MVCRecipe\\MVCRecipe.Utility\\MVCRecipe.Utility.csproj"
+            "C:\\Users\\18176\\source\\repos\\mvcrecipe\\MVCRecipe.Utility\\MVCRecipe.Utility.csproj": {
+              "projectPath": "C:\\Users\\18176\\source\\repos\\mvcrecipe\\MVCRecipe.Utility\\MVCRecipe.Utility.csproj"
             }
           }
         }
@@ -9349,20 +9350,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.0.1, 3.0.1]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -9371,7 +9358,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

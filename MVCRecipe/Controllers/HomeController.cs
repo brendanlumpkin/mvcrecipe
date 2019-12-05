@@ -47,20 +47,20 @@ namespace MVCRecipe.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public async Task<ActionResult> SaveRecipe(string link)
+        public async Task<ActionResult> SaveRecipe()
         {
             var user = await _userManager.GetUserAsync(User);
-            var temp = _context.ApplicationUser.Where(u => u.Id == user.Id).FirstOrDefault();
+            string link = "http://google.com/";
             var recipe = new Recipe
             {
-                User = temp,
+                ApplicationUserId = user.Id,
                 RecipeLink = link,
             };
             _context.Add(recipe);
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
             return View("Index");
         }
-
+        
         public async Task<ActionResult> GetRecipes()
         {
             var user = await _userManager.GetUserAsync(User);

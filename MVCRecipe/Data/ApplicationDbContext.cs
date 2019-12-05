@@ -20,7 +20,7 @@ namespace MVCRecipe.Data
         {
             base.OnModelCreating(builder);
             builder.Entity<Recipe>()
-                .HasOne(r => r.User)
+                .HasOne(r => r.ApplicationUser)
                 .WithMany(a => a.Recipes);
                 
         }

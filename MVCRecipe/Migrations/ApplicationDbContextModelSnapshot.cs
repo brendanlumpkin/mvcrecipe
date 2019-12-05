@@ -26,15 +26,15 @@ namespace MVCRecipe.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("RecipeLink")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("RecipeId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Recipe");
                 });
@@ -270,9 +270,9 @@ namespace MVCRecipe.Migrations
 
             modelBuilder.Entity("MVCRecipe.Models.Recipe", b =>
                 {
-                    b.HasOne("MVCRecipe.Models.ApplicationUser", "User")
+                    b.HasOne("MVCRecipe.Models.ApplicationUser", "ApplicationUser")
                         .WithMany("Recipes")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("ApplicationUserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

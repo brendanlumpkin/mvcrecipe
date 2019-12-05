@@ -51,7 +51,8 @@ function apiSearch() {
                 var save = $("<button>");
                 save.text("Save to Profile");
                 save.val(url);
-                save.attr('onclick', 'saveRecipe(\"' + url +'\")');
+                save.addClass('button');
+                save.attr('onclick', 'saveRecipe()');
                 recipe.append(save);
                 recipe.append($("<h1>"));
                 $("#results").append(recipe);

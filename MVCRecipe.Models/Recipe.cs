@@ -11,6 +11,8 @@ namespace MVCRecipe.Models
     {
         public int RecipeId { get; set; }
         public string RecipeLink { get; set; }
-        public ApplicationUser User { get; set; }
+        public string ApplicationUserId { get; set; }
+        [ForeignKey("ApplicationUserId")]
+        public ApplicationUser ApplicationUser { get; set; }
     }
 }

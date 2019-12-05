@@ -11,3 +11,5 @@ C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.DataAccess\bin\Debug\netcoreapp3
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.DataAccess\bin\Debug\netcoreapp3.0\MVCRecipe.Models.pdb
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.DataAccess\bin\Debug\netcoreapp3.0\MVCRecipe.Utility.pdb
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.DataAccess\obj\Debug\netcoreapp3.0\MVCRecipe.DataAccess.csproj.CopyComplete
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.DataAccess\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.DataAccess\bin\Debug\netcoreapp3.0\appsettings.json

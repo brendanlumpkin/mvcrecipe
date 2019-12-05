@@ -168,3 +168,11 @@ C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\tr\Micro
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\Razor\Views\Home\Favorites.cshtml.g.cs
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\Razor\Views\Home\Admin.cshtml.g.cs
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll

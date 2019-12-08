@@ -1,17 +1,24 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MVCRecipe</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        @{ IdentityUser x = await UserManager.FindByEmailAsync("admin@ua.edu");}
+        @{ var test = x.Email;} 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MVCRecipe</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Recipe Search</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,7 +30,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            @if (SignInManager.IsSignedIn(User))
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Favorites">Favorites</a>
+                            }
+                        </li>
+                        <li class="nav-item">
+                            @if (User.Identity.Name == test)
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Admin">Admin</a>
+                            }
                         </li>
                     </ul>
                 </div>
@@ -33,12 +52,14 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <br /><br /><br /><br /><br />
+            <iframe src='https://webchat.botframework.com/embed/recipeqnaforbot-bot?s=hoxriNVTs6s.377oQoydKvWM9YMLmBqleWFGHKU1YujhvZAv1t-uzHI' style='min-width: 300px; width: 100%; min-height: 250px; align-content: center'></iframe>
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - MVCRecipe - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2019 - MVCRecipe - <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

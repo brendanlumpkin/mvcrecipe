@@ -1,8 +1,41 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+    <head>
+        <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+        <title>Recipe Search</title>
+    </head>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <main>
+        <div class="text-center">
+
+            <h1 class="display-4">Recipe Search</h1>
+
+            <input type="text" name="query" id="query" />
+            <button onclick="apiSearch()" id="search">Search</button>
+            <br />
+
+            <div id="results"></div>
+            <div id="hiddenLink"></div>
+        </div>
+        <script type="text/javascript">
+            function saveRecipe(btn) {
+                var link = $(btn).val();
+
+                $.ajax({
+                    url: '@Url.Action("SaveRecipe", "Home")',
+                    type: "POST",
+                    data: { link: link }
+                })
+                    .done(function () {
+                        alert("Saved to profile");
+                    });
+            }
+
+            //$(function () {
+            //    $('.button').click(function () {
+            //        alert($(this).attr('at'));
+            //    });
+            //});
+        </script>
+    </main>

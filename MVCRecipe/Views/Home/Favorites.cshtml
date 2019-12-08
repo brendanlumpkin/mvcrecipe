@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Recipe>
+
+@{
+    ViewData["Title"] = "Favorites";
+}
+
+<h1>Favorite Recipes</h1>
+
+<div id="favList">
+        @foreach (var recipe in Model)
+         {
+             <p><a href="@recipe.RecipeLink">@recipe.RecipeLink</a></p>
+         }
+</div>
+
+
+
+

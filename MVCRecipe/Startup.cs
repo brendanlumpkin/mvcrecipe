@@ -12,6 +12,10 @@ using MVCRecipe.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MVCRecipe.DataAccess;
+using MVCRecipe.DataAccess.Data.Initializer;
+using MVCRecipe.Utility;
+using MVCRecipe.Models;
 
 namespace MVCRecipe
 {
@@ -34,9 +38,10 @@ namespace MVCRecipe
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSession();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // This method gets called by the runtime. Use this method to configure the fHTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -52,11 +57,15 @@ namespace MVCRecipe
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
+            app.UseCookiePolicy();
 
             app.UseRouting();
-
+            //dbInit.Initialize();
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

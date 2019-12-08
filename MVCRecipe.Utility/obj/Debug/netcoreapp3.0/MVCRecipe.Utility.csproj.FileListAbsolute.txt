@@ -1,0 +1,8 @@
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\bin\Debug\netcoreapp3.0\MVCRecipe.Utility.deps.json
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\bin\Debug\netcoreapp3.0\MVCRecipe.Utility.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\bin\Debug\netcoreapp3.0\MVCRecipe.Utility.pdb
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\obj\Debug\netcoreapp3.0\MVCRecipe.Utility.csprojAssemblyReference.cache
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\obj\Debug\netcoreapp3.0\MVCRecipe.Utility.AssemblyInfoInputs.cache
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\obj\Debug\netcoreapp3.0\MVCRecipe.Utility.AssemblyInfo.cs
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\obj\Debug\netcoreapp3.0\MVCRecipe.Utility.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe.Utility\obj\Debug\netcoreapp3.0\MVCRecipe.Utility.pdb

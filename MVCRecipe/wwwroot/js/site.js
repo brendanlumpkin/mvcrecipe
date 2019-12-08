@@ -52,7 +52,7 @@ function apiSearch() {
                 save.text("Save to Profile");
                 save.val(url);
                 save.addClass('button');
-                save.attr('onclick', 'saveRecipe()');
+                save.attr('onclick', 'saveRecipe(this);');
                 recipe.append(save);
                 recipe.append($("<h1>"));
                 $("#results").append(recipe);
@@ -61,14 +61,14 @@ function apiSearch() {
 }
 
 function categories(){
-    var categories = ["Breakfast", "Lunch", "Dinner"];
-    for (var x = 0; x < 3; x++) {
+    var categories = ["Appetizer", "Gluten Free", "Christmas", "Healthy", "Southern"]; /*maxes at 5 categories b/c API limits to 5 hits a minute*/
+    for (var x = 0; x < 5; x++) {
         var params = {
             "q": categories[x],
             "app_id": 'b9fca222',
             "app_key": '939b846b89040f57e5749e2bd374c8f1',
             "from": 0,
-            "to:": 3
+            "to:": 5
         };
         $.ajax({
             url: 'https://api.edamam.com/search?' + $.param(params),
@@ -81,7 +81,7 @@ function categories(){
                 var name = data.q; 
                 header.text(name); 
                 category.append(header);
-                for (var i = 0; i < 3; i++) {
+                for (var i = 0; i < 5; i++) {
                     var title = data.hits[i].recipe.label;
                     var url = data.hits[i].recipe.url;
                     var link = $("<a>");
@@ -95,19 +95,3 @@ function categories(){
             });
     }
 }
-
-
-
-function favorites() {
-    if (document.getElementById('Register').innerHTML.indexOf("Register") != -1) {
-        alert("Log in to view favorites");
-        var url = "/Identity/Account/Login"
-        window.location.href = url;
-    }
-    else {
-        var saved = $("div");
-        
-        $("#favList").append(saved);
-    }
-}
-    

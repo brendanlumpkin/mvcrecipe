@@ -14,6 +14,8 @@
 </head>
 <body>
     <header>
+        @{ IdentityUser x = await UserManager.FindByEmailAsync("admin@ua.edu");}
+        @{ var test = x.Email;} 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Recipe Search</a>
@@ -35,11 +37,12 @@
                             {
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Favorites">Favorites</a>
                             }
-                            @if (true)
+                        </li>
+                        <li class="nav-item">
+                            @if (User.Identity.Name == test)
                             {
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Admin">Admin</a>
                             }
-
                         </li>
                     </ul>
                 </div>
@@ -49,6 +52,8 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <br /><br /><br /><br /><br />
+            <iframe src='https://webchat.botframework.com/embed/recipeqnaforbot-bot?s=hoxriNVTs6s.377oQoydKvWM9YMLmBqleWFGHKU1YujhvZAv1t-uzHI' style='min-width: 300px; width: 100%; min-height: 250px; align-content: center'></iframe>
         </main>
     </div>
 

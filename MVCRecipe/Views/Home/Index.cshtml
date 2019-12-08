@@ -18,14 +18,14 @@
             <div id="results"></div>
             <div id="hiddenLink"></div>
         </div>
-        <script>
-            function saveRecipe(url) {
-                var link = "<a href=\"" + url + "\"></a>";
-                $("#hiddenLink").append(link);
+        <script type="text/javascript">
+            function saveRecipe(btn) {
+                var link = $(btn).val();
 
                 $.ajax({
                     url: '@Url.Action("SaveRecipe", "Home")',
-                    type: "POST"
+                    type: "POST",
+                    data: { link: link }
                 })
                     .done(function () {
                         alert("Saved to profile");

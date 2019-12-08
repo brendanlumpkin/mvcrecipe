@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MVCRecipe.DataAccess",
+    "\\MVCRecipe.Models"
   ],
   "PreviewInSolutionExplorer": false
 }

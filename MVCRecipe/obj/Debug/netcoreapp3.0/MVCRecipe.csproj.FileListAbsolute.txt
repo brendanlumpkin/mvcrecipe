@@ -176,3 +176,5 @@ C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\Razor\Views\Home\Create.cshtml.g.cs
+C:\Users\lumpk\source\repos\MVCRecipe\MVCRecipe\obj\Debug\netcoreapp3.0\Razor\Views\Home\Edit.cshtml.g.cs
